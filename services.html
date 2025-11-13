@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Care Connect — Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Health Care Connect</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#" class="active">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="Appointment.html">Appointment</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Our Services</h2>
+    <p>Comprehensive online healthcare services for a wide range of medical needs</p>
+    <a href="Appointment.html" class="btn">Book an Appointment</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="features">
+   
+  <!-- General consultation -->
+    <div class="card hover">
+      <img src="primarycare.png" alt="General consultation" />
+      <h3>General consultation</h3>
+      <p>Book appointments with certified general physicians for routine checkups, health advice, and prescriptions..</p>
+      <a href="Appointment.html" class="btn">Book an Appointment</a>
+    </div>
+    <!-- Specialist consultation -->
+    <div class="card hover">
+      <img src="Specialitycare.png" alt="Specialist consultation" />
+      <h3>Specialist consultation</h3>
+      <p>Connect with top specialists (Cardiologist, Dermatologist, Neurologist, etc.) for expert opinions and treatment plans.</p>
+      <a href="Appointment.html" class="btn">Book an Appointment</a>
+    </div>
+    <!-- Mental Health & Counseling -->
+    <div class="card hover">
+      <img src="mentalcare.png" alt="Mental Health & Counseling" />
+      <h3>Mental Health & Counseling</h3>
+      <p>Confidential therapy and counseling sessions for mental wellness and stress management.</p>
+      <a href="Appointment.html" class="btn">Book an Appointment</a>
+    </div>
+
+    <!-- Emergency & Ambulance Services -->
+    <div class="card hover">
+      <img src="Ambulance.avif" alt="Emergency & Ambulance Services" />
+      <h3>Emergency & Ambulance Services</h3>
+      <p>24/7 ambulance and emergency assistance with real-time tracking and priority booking.</p>
+      <a href="Appointment.html" class="btn">Book an Appointment</a>
+    </div>
+    <!-- Pharmacy & Medicine Delivery -->
+    <div class="card hover">
+      <img src="Pharmacy.jpg" alt="Pharmacy & Medicine Delivery" />
+      <h3>Pharmacy & Medicine Delivery</h3>
+      <p>Order prescribed medicines online and get them delivered to your doorstep quickly.</p>
+      <a href="Appointment.html" class="btn">Book an Appointment</a>
+    </div>
+    <!-- Vaccination & Immunization -->
+    <div class="card hover">
+      <img src="Vaccine.avif" alt="Vaccination & Immunization" />
+      <h3>Vaccination & Immunization</h3>
+      <p>Book and track vaccination schedules for children and adults with reminders and certified records.</p>
+      <a href="Appointment.html" class="btn">Book an Appointment</a>
+    </div>
+
+
+  <!-- Additional Services -->
+  <section class="features" style="background-color: #e6f9ff;">
+    <div class="card" style="width: 90%; max-width: 700px;">
+      <h3 style="color:#008cba;">Additional Services</h3>
+      <ul style="list-style: none; margin-top:15px; color:#333; font-size:1.05em; line-height:1.8;">
+        <li>✔ Prescription refills</li>
+        <li>✔ Lab results</li>
+        <li>✔ Medical records management</li>
+      </ul>
+    </div>
+  </section>
+  </section>
+
+ 
+     <!-- Footer -->
+     <footer>
+        <p>© 2025 HealthCare Connect | All Rights Reserved</p>
+      </footer>
+ <!-- Note: The initial 'display: none;' is handled by the .chatbot-container CSS class -->
+<div class="chatbot-container" id="chatbot-container">
+    <div class="chat-header">
+        <span>Health Care Assistant</span>
+        <!-- The button now uses the ID for the JS logic -->
+        <button id="close-chat-btn" style="background:none; border:none; color:white; font-size:18px; cursor:pointer;">×</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+        <!-- Initial messages will be added by the JS -->
+    </div>
+    <form class="chat-input" id="chat-form">
+        <input type="text" id="chat-input-field" placeholder="Type your message..." />
+        <button type="submit" id="send-btn">Send</button>
+    </form>
+</div>
+
+<!-- Floating Chat Icon (Your original button) -->
+<button class="chatbot-btn" id="chatbot-icon">💬</button>
+
+<!-- SCRIPT LINK (MUST BE LAST ELEMENT IN BODY) -->
+<!-- Link the JS file containing the logic and knowledge base -->
+<script src="chatbot.js"></script>
+
+</body>
+</html>
